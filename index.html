@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <!-- Enlazando Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Enlazando tu CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+        <a class="navbar-brand" href="#">Mi Portafolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ruta/a/tu/CV.pdf" target="_blank">Descargar CV</a> <!-- Cambia 'ruta/a/tu/CV.pdf' por la ruta real de tu CV -->
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Sección de bienvenida -->
+    <header>
+        <div class="container">
+        <h1>Bienvenidos a mi Portafolio</h1>
+        <p>Descubre mis proyectos y conocimientos</p>
+        <a href="#proyectos" class="btn btn-primary" id="ver-proyectos-btn">Ver Proyectos</a>
+        </div>
+    </header>
+
+
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Mis Proyectos</h2>
+            <div class="row">
+                <!-- Proyecto 1: FastAPI -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/fastapi.jpg" class="card-img-top" alt="Proyecto FastAPI">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto FastAPI</h5>
+                            <p class="card-text">Una aplicación web desarrollada con FastAPI que permite crear APIs rápidas y eficientes.</p>
+                            <a href="https://github.com/MateusLanzoni/FastAPI.git" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 2: Backend -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/backend.jpg" class="card-img-top" alt="Proyecto Backend">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto Backend</h5>
+                            <p class="card-text">Desarrollo de un sistema backend robusto utilizando tecnologías modernas para gestionar datos y usuarios.</p>
+                            <a href="https://github.com/DiazD54/web_backend.git" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 3: Parcial de Postgres -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/postgres.jpg" class="card-img-top" alt="Parcial de Postgres">
+                        <div class="card-body">
+                            <h5 class="card-title">Parcial de Postgres</h5>
+                            <p class="card-text">Implementación de un sistema de gestión de base de datos utilizando PostgreSQL para el almacenamiento y consulta de datos.</p>
+                            <a href="https://github.com/DiazD54/parcialBD.git" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Sobre Mí</h2>
+            <img src="img/IMG_1720.JPEG" alt="Foto Personal" class="img-fluid">
+            <p class="mt-3">"Soy estudiante de Ingeniería en Sistemas y Computación en la Universidad EIA, donde estoy desarrollando habilidades técnicas y prácticas en el diseño y la implementación de sistemas informáticos. Mi enfoque se centra en la creación de soluciones innovadoras y eficientes que aborden los desafíos tecnológicos actuales. A través de mis estudios, he adquirido conocimientos en desarrollo de software, gestión de bases de datos, redes y seguridad informática, lo que me permite abordar proyectos integrales y multidisciplinarios con confianza."</p>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="py-5">
+        <div class="container text-center">
+        <h2 class="mb-4">Contacto</h2>
+        <p><strong>WhatsApp:</strong> +57 3012667823</p>
+        <p><strong>Correo:</strong> <a href="mailto:danieldiazarrieta54@gmail.com">danieldiazarrieta54@gmail.com</a></p>
+    
+        <h3 class="mb-4">Envíame un Mensaje</h3>
+        <div class="form-box">
+            <form>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="empresa">Empresa:</label>
+                <input type="text" class="form-control" id="empresa" placeholder="Tu empresa">
+            </div>
+            <div class="form-group">
+                <label for="contact-email">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="contact-email" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-phone">Número de Contacto:</label>
+                <input type="tel" class="form-control" id="contact-phone" placeholder="Tu número de contacto">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    
+        <!-- Botón para descargar el CV -->
+        <h3 class="mt-5 mb-4">Descargar mi CV</h3>
+        <a href="files/tu-cv.pdf" class="btn btn-secondary" download="Daniel_Diaz_Arrieta_CV.pdf">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlazando Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript para desplazamiento suave -->
+    <script>
+        document.getElementById('ver-proyectos-btn').addEventListener('click', function(event) {
+            event.preventDefault(); // Previene el comportamiento por defecto del enlace
+            const targetId = this.getAttribute('href'); // Obtiene el valor del atributo href
+            const targetElement = document.querySelector(targetId); // Selecciona el elemento objetivo
+            const topOffset = targetElement.getBoundingClientRect().top + window.scrollY; // Calcula la posición superior
+            window.scrollTo({
+                top: topOffset,
+                behavior: 'smooth' // Habilita el desplazamiento suave
+            });
+        });
+    </script>
+</body>
+</html>

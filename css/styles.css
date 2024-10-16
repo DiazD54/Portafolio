@@ -1,0 +1,205 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    background: url('tu-imagen-de-fondo.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(20, 20, 20, 0.8)), url('img/fondo-bienvenida.jpg'); /* Cambia la ruta a tu imagen */
+    background-attachment: fixed; /* Fija el fondo al hacer scroll */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Altura de la sección (100% de la vista) */
+    color: white; /* Cambia el color del texto si es necesario */
+    display: flex; /* Usa Flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+
+.navbar {
+    background-color: #1a1a1a;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.form-box {
+    background-color: #1e1e1e; /* Fondo del formulario */
+    border-radius: 10px; /* Esquinas redondeadas */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del recuadro */
+    max-width: 500px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #121212; /* Color de fondo oscuro para el cuerpo */
+    color: #ffffff; /* Color de texto claro */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #343a40; /* Color de fondo de la navbar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para efecto de profundidad */
+}
+
+.nav-link {
+    color: #ffffff; /* Color de texto de los enlaces */
+}
+
+.nav-link:hover {
+    color: #007bff; /* Color al pasar el ratón sobre los enlaces */
+}
+
+/* Estilos para la sección de bienvenida */
+header {
+    background-image: url('img/tu-foto-de-fondo.jpg'); /* Cambia el nombre de la imagen aquí */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Altura de pantalla completa */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Centra el contenido verticalmente */
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.25rem;
+}
+
+/* Estilos para el botón de proyectos */
+header .btn {
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilos para la sección de proyectos */
+#proyectos {
+    background-color: #1e1e1e; /* Fondo oscuro para la sección de proyectos */
+    color: #ffffff; /* Color de texto claro */
+    padding: 50px 0; /* Espaciado vertical */
+}
+
+#proyectos .card {
+    background-color: #2b2b2b; /* Fondo oscuro para las tarjetas */
+    border: none; /* Sin borde */
+    color: #ffffff; /* Color de texto en las tarjetas */
+    margin-top: 20px; /* Margen superior para evitar que las tarjetas se junten en móviles */
+    min-height: 350px; /* Altura mínima para las tarjetas */
+    display: flex; /* Para usar flexbox */
+    flex-direction: column; /* Alinear contenido en columna */
+    justify-content: space-between; /* Distribuir espacio entre elementos */
+}
+
+#proyectos .card-img-top {
+    height: 200px; /* Altura fija para la imagen */
+    object-fit: cover; /* Ajustar la imagen sin deformar */
+}
+
+
+#proyectos .card:hover {
+    transform: scale(1.05); /* Efecto de escalado al pasar el mouse */
+}
+
+#proyectos .card-title {
+    color: #ffffff; /* Títulos en blanco */
+}
+
+#proyectos .card-text {
+    color: #cccccc; /* Descripciones en un gris claro */
+}
+
+#proyectos .btn-primary {
+    background-color: #007bff; /* Botón azul */
+}
+
+/* Estilos para la sección sobre mí */
+#sobre-mi {
+    background-color: #1c1c1c; /* Fondo gris oscuro */
+    padding: 50px 0;
+}
+
+#sobre-mi img {
+    border: 4px solid #007bff; /* Borde azul alrededor de la imagen */
+    border-radius: 50%; /* Imagen circular */
+    padding: 5px;
+    width: 150px; /* Tamaño de la imagen */
+    height: 150px; /* Tamaño de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+    background-color: #1e1e1e; /* Fondo oscuro para la sección de contacto */
+    padding: 50px 0;
+}
+
+.form-box {
+    background-color: #2b2b2b; /* Fondo oscuro para el recuadro de formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para efecto de profundidad */
+}
+
+/* Estilos para los textos */
+h1, h2 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #343a40; /* Fondo del footer oscuro */
+    color: #ffffff; /* Color de texto claro */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Media Queries para mejorar la responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #proyectos .card {
+        margin-top: 15px; /* Ajuste del margen superior para móviles */
+    }
+}
